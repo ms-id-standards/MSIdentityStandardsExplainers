@@ -48,3 +48,4 @@ what standards venue they expect to go to next (if known).
   <a href="https://github.com/ms-id-standards/MSIdentityStandardsExplainers/labels/PasskeyEndpointsWellKnownUrl">
   ![GitHub issues by-label](https://img.shields.io/github/issues/ms-id-standards/MSIdentityStandardsExplainers/PasskeyEndpointsWellKnownUrl?label=issues)</a> |
   [New issue...](https://github.com/ms-id-standards/MSIdentityStandardsExplainers/issues/new?assignees=timcappalli&labels=PasskeyEndpointsWellKnownUrl&title=%5BPasskeyEndpointsWellKnownUrl%5D+%3CTITLE+HERE%3E)
+

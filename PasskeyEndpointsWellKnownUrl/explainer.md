@@ -61,7 +61,7 @@ A successful response would return:
 
 - Status Code: `200 OK`
 - Content-Type: `application/json`
-- a JSON object containing a one or both members defined in the value below
+- a JSON object containing a one or both members defined in the table below
 
 | Member      | JSON Type | Format | Required/Optional | Description                                                                         |
 | :---------- | :-------- | :----- | :---------------- | ----------------------------------------------------------------------------------- |
