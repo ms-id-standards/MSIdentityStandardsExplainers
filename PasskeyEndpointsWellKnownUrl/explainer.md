@@ -37,7 +37,7 @@ This document is intended as a starting point for engaging the community and sta
 
 Most users currently use a password as their primary credential for accessing sites and services on the web today and password manager usage has been steadily rising as more and more options have become available to users.
 
-Passkey providers and/or clients may wish to display an indication to the user that a given website/service (RP) has support for passkeys and provide a way for the
+Passkey providers and/or clients may wish to display an indication to the user that a given website/service (RP) has support for passkeys and provide a way for the user to access certain account management flows directly.
 
 For example, a passkey provider may wish to provide a visual indication next to a password-only entry in their management UI, that when clicked, opens the user's default browser and automatically takes the user directly to the RP's passkey enrollment page.
 
@@ -49,7 +49,7 @@ These experiences can help remove some of the friction that comes with such a la
 
 A passkey consists of both a public and private key. The public key is stored by the server (RP) and linked to the user's account, and the private key is stored and managed by the passkey provider. Deleting a passkey from the passkey provider does not remove the passkey from the user's account.
 
-A passkey provider may want to offer the user a direct link to the RP's account settings page where credentials, specifically passkeys, can be managed. A direct link is a much better user experience than having the user navigate around inside their account settings to find this
+A passkey provider may want to offer the user a direct link to the RP's account settings page where credentials, specifically passkeys, can be managed. A direct link is a much better user experience than having the user search around their account settings.
 
 This use case is very similar to the existing ["Change Password URL"](https://www.w3.org/TR/change-password-url/) model that some password managers and websites have implemented.
 
@@ -61,7 +61,7 @@ A successful response would return:
 
 - Status Code: `200 OK`
 - Content-Type: `application/json`
-- a JSON object containing a one or both members defined in the table below
+- a JSON object containing one or both members defined in the table below
 
 | Member      | JSON Type | Format | Required/Optional | Description                                                                         |
 | :---------- | :-------- | :----- | :---------------- | ----------------------------------------------------------------------------------- |
@@ -96,4 +96,4 @@ The `passkey-endpoints` file must be found at `[RP ID]/.well-known/passkey-endpo
 ## Open Questions
 
 - Should the FQDN defined in the metadata values be required to match the RP ID serving the metadata?
-- Should we add an explicit delete passkey endpoint (vs just manage) that can actually perform a getAssertion to help the user more seamlessly delete the credential?
+- Should we add an explicit delete passkey endpoint (vs just manage) that can actually perform a getAssertion to help the user more seamlessly delete the exact credential?
