@@ -16,7 +16,7 @@ This document is intended as a starting point for engaging the community and sta
 
 ## Terms
 
-- **passkey(s)**:
+- **passkey(s)**: the user-friendly name for FIDO2/WebAuthn discoverable credentials
 - **passkey provider**: native platform authenticators or third party solutions that provide credential management (such as "password managers")
 - **Relying Party (RP)**: see the [WebAuthn specification](https://w3c.github.io/webauthn/#relying-party)
 
@@ -151,4 +151,7 @@ The `passkey-endpoints` file must be found at `[RP ID]/.well-known/passkey-endpo
 ## Open Questions
 
 - Should the FQDN defined in the metadata values be required to match the RP ID serving the metadata?
-- Should we add an explicit delete passkey endpoint (vs just manage) that can actually perform a getAssertion to help the user more seamlessly delete the exact credential?
+
+## Future Updates
+
+- Delete passkey endpoint
