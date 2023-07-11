@@ -6,13 +6,15 @@ Author: [Tim Cappalli](https://github.com/timcappalli) &lt;tim.cappalli@microsof
 
 This document is intended as a starting point for engaging the community and standards bodies in developing collaborative solutions fit for standardization. As the solutions to problems described in this document progress along the standards-track, we will retain this document as an archive and use this section to keep the community up-to-date with the most current standards venue and content location of future work and discussions.
 
-- This document status: **WIP DRAFT**
+- This document status: draft.01
 - Current venue: tbd
 - Current version: early draft
 
 ## Introduction
 
-> TO DO
+Passkeys are a new phishing-resistant credential for the web, leveraging FIDO2 and WebAuthn and designed for mass-scale adoption by users. All major operating systems and browsers now support passkeys.
+
+As more sites start offering passkeys, [passkey providers](#terms) (traditionally known as password managers) and FIDO2 clients (apps, browsers, OS) want to help users upgrade their accounts from passwords to passkeys. To do this, sites (known as [relying parties](#terms)) need a way to advertise that they support passkeys and provide additional metadata to support a seamless interactive upgrade experience.
 
 ## Terms
 
@@ -137,21 +139,3 @@ Content-Type: application/json
 ### File Location
 
 The `passkey-endpoints` file must be found at `[RP ID]/.well-known/passkey-endpoints` (without an extension), as defined in [RFC 5785](https://www.rfc-editor.org/rfc/rfc5785.html).
-
-## Security Considerations
-
-> To Do
-
-## Privacy Considerations
-
-> **To Do**
->
-> - Require consent before background fetch
-
-## Open Questions
-
-- Should the FQDN defined in the metadata values be required to match the RP ID serving the metadata?
-
-## Future Updates
-
-- Delete passkey endpoint
