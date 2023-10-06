@@ -1,4 +1,4 @@
-# Passkey Endpoints Well-Known URL
+# Passkey Endpoints Well-Known URI
 
 Author: [Tim Cappalli](https://github.com/timcappalli) &lt;tim.cappalli@microsoft.com&gt;
 
@@ -6,7 +6,7 @@ Author: [Tim Cappalli](https://github.com/timcappalli) &lt;tim.cappalli@microsof
 
 This document is intended as a starting point for engaging the community and standards bodies in developing collaborative solutions fit for standardization. As the solutions to problems described in this document progress along the standards-track, we will retain this document as an archive and use this section to keep the community up-to-date with the most current standards venue and content location of future work and discussions.
 
-- This document status: draft.02
+- This document status: draft.03
 - Current venue: tbd
 - Current version: early draft
 
@@ -57,7 +57,7 @@ This use case is very similar to the existing ["Change Password URL"](https://ww
 
 ## Proposed Solution
 
-We propose defining a new [well-known URL](https://www.rfc-editor.org/rfc/rfc5785.html), hosted by a WebAuthn [Relying Party](#terms) who supports passkeys.
+We propose defining a new [well-known URI](https://www.rfc-editor.org/rfc/rfc8615), hosted by a WebAuthn [Relying Party](#terms) who supports passkeys.
 
 A successful response would return:
 
@@ -72,7 +72,7 @@ A successful response would return:
 
 ### Example
 
-For the Relying Party `https://example.com`, the well-known URL would be `https://example.com/.well-known/passkey-endpoints` with a response of:
+For the Relying Party `https://example.com`, the well-known URI would be `https://example.com/.well-known/passkey-endpoints` with a response of:
 
 ```http
 HTTP/1.1 200 OK
@@ -85,4 +85,4 @@ Content-Type: application/json
 
 ### File Location
 
-The `passkey-endpoints` file must be found at `[RP ID]/.well-known/passkey-endpoints` (without an extension), as defined in [RFC 5785](https://www.rfc-editor.org/rfc/rfc5785.html).
+The `passkey-endpoints` file must be found at `[RP ID]/.well-known/passkey-endpoints` (without an extension), as defined in [RFC 8615](https://www.rfc-editor.org/rfc/rfc8615).
