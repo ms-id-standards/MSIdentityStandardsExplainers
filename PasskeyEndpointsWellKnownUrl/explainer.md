@@ -3,6 +3,7 @@
 Author: [Tim Cappalli](https://github.com/timcappalli) &lt;tim.cappalli@microsoft.com&gt;
 
 Draft specification: https://w3c.github.io/webappsec-passkey-endpoints/passkey-endpoints.html
+
 Specification GitHub: https://github.com/w3c/webappsec-passkey-endpoints
 
 ## Status of this Document
